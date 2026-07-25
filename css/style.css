@@ -64,6 +64,25 @@ a:hover { color: var(--gilt); }
   filter: drop-shadow(2px 4px 8px rgba(0,0,0,0.6));
 }
 
+/* ---- Tavern scene under header ---- */
+.tavern-scene {
+  margin: 2rem 0;
+  text-align: center;
+}
+.tavern-scene img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 4px;
+  border: 1px solid rgba(201, 162, 75, 0.35);
+}
+.tavern-caption {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  color: var(--gilt);
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
 /* ---- Section headers ---- */
 .section-header {
   display: flex;
@@ -81,6 +100,54 @@ a:hover { color: var(--gilt); }
   font-size: 1.4rem;
   color: var(--gilt);
   margin: 0;
+}
+
+/* ---- Peek-over portraits ---- */
+.peek-wrap {
+  position: relative;
+  overflow: visible;
+}
+.peek-over {
+  position: absolute;
+  top: 10px;
+  right: -90px;
+  width: 110px;
+  z-index: 5;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6));
+  pointer-events: none;
+}
+.peek-thistle { width: 170px; top: 15px; right: -110px; }
+.peek-kaelen  { width: 140px; top: 5px;  right: -110px; }
+.peek-light   { width: 130px; top: 20px; right: -110px; }
+
+@media (max-width: 900px) {
+  .peek-over { display: none; }
+}
+
+/* ---- Mika banner with dialog ---- */
+.mika-banner {
+  position: relative;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+.mika-banner img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 4px;
+}
+.mika-dialog {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(28, 23, 18, 0.85);
+  border: 1px solid var(--gilt);
+  color: var(--ink);
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  max-width: 80%;
 }
 
 .page p { margin: 0 0 1.1rem; }
