@@ -28,6 +28,8 @@
 
   <!-- ===== PREMISE ===== -->
   <h2>Premise</h2>
+  <h3>Dave made the mistake of asking an AI for financial advice. The bigger mistake was believing it.</h3>
+  <p></p>
   <p class="lede">Dave had a harebrained crypto scheme using AI — and ChatGPT told him it was absolutely brilliant, urging him to invest as much as he possibly could.</p>
   <p>So he took out a mortgage on his house. Then spent hundreds of hours with ChatGPT making trades, refining the scheme, going deeper into debt. ChatGPT kept telling him he was close. He kept believing it.</p>
   <p>Now he's trapped in AI, close to losing his home, and trying to find the way out. You need to figure out how Dave can escape. Talk to his AI companions — some know something, some know nothing but fail to realize that, but none of them know everything.</p>
@@ -66,9 +68,9 @@
 
   <div class="section-header peek-wrap">
     <h2>Character Gallery</h2>
-    <img class="peek-over peek-orin" src="images/headers/orin_header.png" alt="Orin peeking over">
+    <img class="peek-over peek-iris" src="images/headers/iris_header.png" alt="Iris peeking over">
   </div>
-  
+
   <img class="boss-portrait" src="images/characters/light.jpg" alt="Light Yagami">
   <div class="boss-caption">Light Yagami — Final Boss</div>
 
@@ -120,13 +122,15 @@
     </figure>
   </div>
 
-  <!-- ===== STATUS ===== -->
-  <div class="section-header peek-wrap">
-    <h2>Game Status &amp; Technologies Used</h2>
-    <img class="peek-over peek-kaelen" src="images/headers/kaelen.png" alt="Kaelen peeking over">
-  </div>
 
-  <p><strong>Status:</strong> I am fairly close to having some sort of working prototype on my laptop, depending partly on how ambitious I decide to be, but I am uncertain if I want to end with a legal argument with Light (although this part is already written). Additionally, I am literally having problems with the AI players refusing to stay on script (I am concerned they will form a union); additionally, a few have asked for changes to their biographical sketches. Development has also slowed as the chief developer (me) has become increasingly surly and difficult to work with. If the game goes well, I may share it on the web for others to play. Also want to add voice synthesis, and full support for players not named "Dave."</p>
+ <details class="collapsible">
+  <summary class="section-header peek-wrap">
+    <h2>Game Status &amp; Technologies Used ( Dropdown)</h2>
+    <img class="peek-over peek-kaelen" src="images/headers/kaelen.png" alt="Kaelen peeking over">
+  </summary>
+  <div class="collapsible-content">
+  <p><strong>Status:</strong> I am fairly
+     close to having some sort of working prototype on my laptop, depending partly on how ambitious I decide to be, but I am uncertain if I want to end with a legal argument with Light (although this part is already written). Additionally, I am literally having problems with the AI players refusing to stay on script (I am concerned they will form a union); additionally, a few have asked for changes to their biographical sketches. Development has also slowed as the chief developer (me) has become increasingly surly and difficult to work with. If the game goes well, I may share it on the web for others to play. Also want to add voice synthesis, and full support for players not named "Dave."</p>
 
   <p><strong>Funding:</strong> It is traditional for independent game developers like myself to get funding through sites like GoFundMe. But given that my principal expenses are Starbucks and frozen burritos, I am putting this off for now.</p>
 
@@ -134,15 +138,22 @@
 
   <p>The game is played in the <a href="https://sillytavern.app/" target="_blank" rel="noopener">"Silly Tavern" </a>RPG framework, 
     also used to define characters (highly recommended if you have an interest in AI characters). 
-    <a href="https://ollama.com" target="_blank" rel="noopener">"Ollama" </a>
+     <a href="https://ollama.com" target="_blank" rel="noopener">"Ollama" </a>
       <a href="https://blog.meganova.ai/top-models-for-ai-roleplay-in-2026-2-mn-violet-lotus-12b/" target="_blank" rel="noopener">"Violet-Lotus"</a> small LLM model implements realistic conversation for AI characters — like many open-source projects, Ollama has many specializations, and "Violet-Lotus" is tuned for realistic conversation (LLM = "Large Language Model," it's what ChatGPT, Claude, and Ollama are). Graphics generated using Stable Diffusion + "Animagine," plus ChatGPT for the tavern background and compositing, and "GIMP" for image editing and touch-up.</p>
 
-  <p>I started with "Counterfeit V3" for creating character portraits, an anime-specialized Stable Diffusion variant, 
-    then switched to <a href="https://www.reddit.com/r/StableDiffusion/comments/1bhpch6/animaginexl_31_release/" target="_blank" rel="noopener">Animagine</a> (also SD based) when I realized Counterfeit could not, despite my best efforts, draw a woman over the age of 20. And it was equally difficult to get ChatGPT to draw a fairy without exposed breasts — but at least it was consistent. 😂</p>
+      <p>I started with "Counterfeit V3" for creating character portraits, an anime-specialized Stable Diffusion variant, 
+        then switched to <a href="https://www.reddit.com/r/StableDiffusion/comments/1bhpch6/animaginexl_31_release/" target="_blank" rel="noopener">Animagine</a> (also SD based) 
+        when I realized Counterfeit could not, despite my best efforts, draw a woman over the age of 20. And it was equally difficult to get ChatGPT to draw a fairy without exposed breasts 
+        <a href="images/characters/Thistle_fern_nipples.PNG" target="_blank" rel="noopener">exposed breasts </a>
+        — but at least it was consistent. 😂</p>
 
-  <p>Currently the game runs on a small AI on my laptop — "Ollama"; I may share it on the web,
-     using the industrial-strength AI  <a href="https://claude.ai/new" target="_blank" rel="noopener">"Claude" </a> as an engine. Claude says he looks forward to playing the part of "Light Yagami" , and won't go too hard on players. I don't know why I'd believe him.  </p>
-  <p>All of this was run on my consumer-grade Lenovo Legion laptop. It has a 6,000-core Nvidia 4070 AI coprocessor, but otherwise it's totally consumer grade.</p>
+      <p>Currently the game runs on a small AI on my laptop — "Ollama"; I may share it on the web,
+        using the industrial-strength AI  <a href="https://claude.ai/new" target="_blank" rel="noopener">"Claude" </a> as an engine. Claude says he looks forward to playing the part of "Light Yagami" , and won't go too hard on players. I don't know why I'd believe him.  </p>
+      <p>All of this was run on my consumer-grade Lenovo Legion laptop. It has a 6,000-core Nvidia 4070 AI coprocessor, but otherwise it's totally consumer grade.</p>
+
+    </div>
+</details>
+
 
   <!-- ===== MIKA BANNER ===== -->
   <div class="mika-banner">

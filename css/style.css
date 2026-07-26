@@ -117,9 +117,10 @@ a:hover { color: var(--gilt); }
   pointer-events: none;
 }
 .peek-thistle { width: 190px; top: 15px; right: -120px; }
-.peek-kaelen  { width: 140px; top: 5px;  right: -110px; }
+.peek-kaelen  { width: 140px; top: 0px;  right: -120px; }
 .peek-light   { width: 130px; top: 20px; right: -110px; }
-.peek-orin    { width: 120px; top: 0px; right: -110px; }
+.peek-orin    { width: 140px; top: 15px; right: -115px; }
+.peek-iris    { width: 140px; top: 30px; right: -130px; }
 
 @media (max-width: 900px) {
   .peek-over { display: none; }
@@ -263,4 +264,27 @@ blockquote cite {
   .boss-portrait { width: 150px; height: 150px; }
   .gallery-grid { max-width: 320px; gap: 0.8rem; }
   .bg-rotisserie { height: 200px; }
+}
+/* ---- Collapsible section ---- */
+details.collapsible summary.section-header {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+details.collapsible summary.section-header::-webkit-details-marker {
+  display: none;
+}
+details.collapsible summary.section-header::after {
+  content: "▼";
+  color: var(--gilt);
+  font-size: 0.75rem;
+  transition: transform 0.25s ease;
+}
+details.collapsible[open] summary.section-header::after {
+  transform: rotate(180deg);
+}
+.collapsible-content {
+  padding-top: 0.3rem;
 }
