@@ -116,9 +116,10 @@ a:hover { color: var(--gilt); }
   filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6));
   pointer-events: none;
 }
-.peek-thistle { width: 170px; top: 15px; right: -110px; }
+.peek-thistle { width: 190px; top: 15px; right: -120px; }
 .peek-kaelen  { width: 140px; top: 5px;  right: -110px; }
 .peek-light   { width: 130px; top: 20px; right: -110px; }
+.peek-orin    { width: 120px; top: 0px; right: -110px; }
 
 @media (max-width: 900px) {
   .peek-over { display: none; }
