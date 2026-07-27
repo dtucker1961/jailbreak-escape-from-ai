@@ -155,6 +155,25 @@ a:hover { color: var(--gilt); }
 .page p { margin: 0 0 1.1rem; }
 .page p.lede { font-style: italic; opacity: 0.9; }
 
+
+.dialog-screenshot {
+  max-width: 100%;
+  width: 600px; /* tune to taste */
+  display: block;
+  margin: 1.5rem auto;
+  border: 2px solid var(--gilt-accent, #b8860b); /* match your existing accent var */
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+}
+
+.dialog-caption {
+  text-align: center;
+  font-style: italic;
+  font-family: 'EB Garamond', serif;
+  color: #a89f8f;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+}
 /* ---- Quote blocks ---- */
 blockquote {
   margin: 1rem 0;
