@@ -118,9 +118,9 @@ a:hover { color: var(--gilt); }
 }
 .peek-thistle { width: 190px; top: 15px; right: -120px; }
 .peek-kaelen  { width: 140px; top: 0px;  right: -120px; }
-.peek-light   { width: 130px; top: 20px; right: -110px; }
+.peek-light   { width: 130px; top: 0px; right: -110px; }
 .peek-orin    { width: 140px; top: 15px; right: -115px; }
-.peek-iris    { width: 140px; top: 30px; right: -130px; }
+.peek-iris    { width: 140px; top: 0px; right: -130px; }
 
 @media (max-width: 900px) {
   .peek-over { display: none; }
